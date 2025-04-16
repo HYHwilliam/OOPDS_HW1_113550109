@@ -15,12 +15,12 @@
 ## Viewing tasks
 1. Select the "View Tasks" option from the main menu. (option 2)
 2. Choose from the following filtering options :
-   - 1. Display All (by ID): View all tasks sorted by their IDs.
-   - 2. By Name: Enter a name to display tasks that match the input.
-   - 3. By Completion Status: Filtered by completed or not completed tasks.
-   - 4. By Category: Enter a category to display tasks that belong to it.
-   - 5. By Due Date: View all tasks sorted by their due dates.
-   - 6. Exit: Leave the task view.
+   - 1: Display All (by ID): View all tasks sorted by their IDs.
+   - 2: By Name: Enter a name to display tasks that match the input.
+   - 3: By Completion Status: Filtered by completed or not completed tasks.
+   - 4: By Category: Enter a category to display tasks that belong to it.
+   - 5: By Due Date: View all tasks sorted by their due dates.
+   - 6: Exit: Leave the task view.
 
 3. The application will display the tasks according to your selected filtering condition
 
@@ -70,11 +70,11 @@ The function is designed to
 
 ## 3. The modifyAttributes function: 
 User selects an attribute to edit from the following options:
-     1: Name → Change the task title.
-     2: Category → Update the task classification.
-     3: Description → Modify task details.
-     4: Due Date → Set a new deadline (YYYY-MM-DD format).
-     5: Exit Editing → Stop editing and display all tasks.
+     - 1: Name → Change the task title.
+     - 2: Category → Update the task classification.
+     - 3: Description → Modify task details.
+     - 4: Due Date → Set a new deadline (YYYY-MM-DD format).
+     - 5: Exit Editing → Stop editing and display all tasks.
 The respective attribute is updated for the selected task.
 Exit Behavior:- Selecting 5 exits the edit mode and triggers viewTasks(true), displaying all tasks.
 
