@@ -5,22 +5,22 @@
 ## Adding a new task
 A. Select the "Add Task" option from the main menu. (option 1)  
 B. Enter the required details:  
-   - Name: The title of the task.  
-   - Category: The category or group to which the task belongs.  
-   - Description: A detailed description of the task.  
-   - Due Date: The deadline for the task in the YYYY-MM-DD format.  
-  (- Completion Status: You do not need to input, it will set as not completed as default.)  
+   * Name: The title of the task.  
+   * Category: The category or group to which the task belongs.  
+   * Description: A detailed description of the task.  
+   * Due Date: The deadline for the task in the YYYY-MM-DD format.  
+   *(Completion Status: You do not need to input, it will set as not completed as default.)  
 C. Confirm the task creation, and the task will be added to your list.  
 
 ## Viewing tasks
 A. Select the "View Tasks" option from the main menu. (option 2)
 B. Choose from the following filtering options :   
-      1: Display All (by ID): View all tasks sorted by their IDs.      
-      2: By Name: Enter a name to display tasks that match the input.      
-      3: By Completion Status: Filtered by completed or not completed tasks.      
-      4: By Category: Enter a category to display tasks that belong to it.      
-      5: By Due Date: View all tasks sorted by their due dates.      
-      6: Exit: Leave the task view.   
+   *1: Display All (by ID): View all tasks sorted by their IDs.      
+   *2: By Name: Enter a name to display tasks that match the input.      
+   *3: By Completion Status: Filtered by completed or not completed tasks.      
+   *4: By Category: Enter a category to display tasks that belong to it.      
+   *5: By Due Date: View all tasks sorted by their due dates.      
+   *6: Exit: Leave the task view.   
 
 C. The application will display the tasks according to your selected filtering condition
 
