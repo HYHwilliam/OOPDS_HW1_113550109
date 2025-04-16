@@ -55,12 +55,12 @@
 # Some other function in my program 
 ## 1. about showMenu function:
 Will display the menu
-   - 1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.
-   - 2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.
-   - 3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.
-   - 4: Mark Task as Completed: Allows users to mark a specific task as completed.
-   - 5: Delete Task: Permanently removes a task from the list based on the selected task ID or name.
-   - 6: Exit: Closes the application and ends the session.
+     1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.
+     2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.
+     3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.
+     4: Mark Task as Completed: Allows users to mark a specific task as completed.
+     5: Delete Task: Permanently removes a task from the list based on the selected task ID or name.
+     6: Exit: Closes the application and ends the session.
 
 ## 2. The isValidDate function:
 The function is designed to
@@ -70,11 +70,11 @@ The function is designed to
 
 ## 3. The modifyAttributes function: 
 User selects an attribute to edit from the following options:
-   - 1: Name → Change the task title.
-   - 2: Category → Update the task classification.
-   - 3: Description → Modify task details.
-   - 4: Due Date → Set a new deadline (YYYY-MM-DD format).
-   - 5: Exit Editing → Stop editing and display all tasks.
+     1: Name → Change the task title.
+     2: Category → Update the task classification.
+     3: Description → Modify task details.
+     4: Due Date → Set a new deadline (YYYY-MM-DD format).
+     5: Exit Editing → Stop editing and display all tasks.
 The respective attribute is updated for the selected task.
 Exit Behavior:- Selecting 5 exits the edit mode and triggers viewTasks(true), displaying all tasks.
 
