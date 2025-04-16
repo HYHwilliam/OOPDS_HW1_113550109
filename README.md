@@ -9,7 +9,7 @@ B. Enter the required details:
    - Category: The category or group to which the task belongs.
    - Description: A detailed description of the task.
    - Due Date: The deadline for the task in the YYYY-MM-DD format.
-  (- Completion Status: You do not need to input, it will set as not completed as default.)
+  (- Completion Status: You do not need to input, it will set as not completed as default.)  
 C. Confirm the task creation, and the task will be added to your list.
 
 ## Viewing tasks
