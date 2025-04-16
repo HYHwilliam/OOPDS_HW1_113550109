@@ -1,5 +1,12 @@
 # OOPDS_HW1_113550109
-## My ToDoList
+# My ToDO List 
+## About Files  
+* The main file's name is main.cpp. 
+  - This file initializes the application, and handles user inputs to call the corresponding functions for managing tasks.  
+* Supporting Files  
+  - Basic_Task.h: Have three attributes name, category, and completion status. Only have display() function, and getters/setters.
+  - Task.h: Define the Task class, which inheritates the Basic_Task.h, and have two new attributes description and due date. Only have display() function, and getters/setters.
+  - ToDoList.h: Define the ToDoList class, which manages a collection of tasks using map. All the other function is in here.
 ----------------------
 # How to use
 ## Adding a new task
