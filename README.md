@@ -15,26 +15,26 @@ C. Confirm the task creation, and the task will be added to your list.
 ## Viewing tasks
 A. Select the "View Tasks" option from the main menu. (option 2)
 B. Choose from the following filtering options :   
-   1: Display All (by ID): View all tasks sorted by their IDs.   
-   2: By Name: Enter a name to display tasks that match the input.   
-   3: By Completion Status: Filtered by completed or not completed tasks.   
-   4: By Category: Enter a category to display tasks that belong to it.   
-   5: By Due Date: View all tasks sorted by their due dates.   
-   6: Exit: Leave the task view.
+      1: Display All (by ID): View all tasks sorted by their IDs.      
+      2: By Name: Enter a name to display tasks that match the input.      
+      3: By Completion Status: Filtered by completed or not completed tasks.      
+      4: By Category: Enter a category to display tasks that belong to it.      
+      5: By Due Date: View all tasks sorted by their due dates.      
+      6: Exit: Leave the task view.   
 
 C. The application will display the tasks according to your selected filtering condition
 
 ## 3. Edit a Specific Task
 A. Select the "Edit Task" option from the main menu. (option 3)
 B. Enter the Task ID to select the task you wish to modify.
-C. Choose the attribute you want to change:
-   1: Name: Update the task title.
-   2: Category: Update the task category.
-   3: Description: Update the task description.
-   4: Due Date: Change the deadline for the task.
-   5: Exit: Leave edit mode without making further changes.
+C. Choose the attribute you want to change:   
+   1: Name: Update the task title.   
+   2: Category: Update the task category.   
+   3: Description: Update the task description.   
+   4: Due Date: Change the deadline for the task.   
+   5: Exit: Leave edit mode without making further changes.   
 
-D. Provide the new value for the selected attribute.
+D. Provide the new value for the selected attribute.   
 E. Your task will be updated immediately.
 F. Once you exit the "Edit Task" mode, the application will display all tasks for a quick review.
 
