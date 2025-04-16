@@ -15,12 +15,12 @@
 ## Viewing tasks
 1. Select the "View Tasks" option from the main menu. (option 2)
 2. Choose from the following filtering options :
-   - 1: Display All (by ID): View all tasks sorted by their IDs.
-   - 2: By Name: Enter a name to display tasks that match the input.
-   - 3: By Completion Status: Filtered by completed or not completed tasks.
-   - 4: By Category: Enter a category to display tasks that belong to it.
-   - 5: By Due Date: View all tasks sorted by their due dates.
-   - 6: Exit: Leave the task view.
+   1: Display All (by ID): View all tasks sorted by their IDs.
+   2: By Name: Enter a name to display tasks that match the input.
+   3: By Completion Status: Filtered by completed or not completed tasks.
+   4: By Category: Enter a category to display tasks that belong to it.
+   5: By Due Date: View all tasks sorted by their due dates.
+   6: Exit: Leave the task view.
 
 3. The application will display the tasks according to your selected filtering condition
 
@@ -28,11 +28,11 @@
 1. Select the "Edit Task" option from the main menu. (option 3)
 2. Enter the Task ID to select the task you wish to modify.
 3. Choose the attribute you want to change:
-   - 1: Name: Update the task title.
-   - 2: Category: Update the task category.
-   - 3: Description: Update the task description.
-   - 4: Due Date: Change the deadline for the task.
-   - 5: Exit: Leave edit mode without making further changes.
+   1: Name: Update the task title.
+   2: Category: Update the task category.
+   3: Description: Update the task description.
+   4: Due Date: Change the deadline for the task.
+   5: Exit: Leave edit mode without making further changes.
 
 4. Provide the new value for the selected attribute.
 5. Your task will be updated immediately.
@@ -54,7 +54,7 @@
 
 # Some other function in my program 
 ## 1. about showMenu function:
-Will display the menu: 
+Will display the menu:    
      1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.     
      2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.    
      3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.    
@@ -70,11 +70,11 @@ The function is designed to:
 
 ## 3. The modifyAttributes function: 
 User selects an attribute to edit from the following options:   
-     - 1: Name → Change the task title.   
-     - 2: Category → Update the task classification.   
-     - 3: Description → Modify task details.   
-     - 4: Due Date → Set a new deadline (YYYY-MM-DD format).   
-     - 5: Exit Editing → Stop editing and display all tasks.   
+     1: Name → Change the task title.   
+     2: Category → Update the task classification.   
+     3: Description → Modify task details.   
+     4: Due Date → Set a new deadline (YYYY-MM-DD format).   
+     5: Exit Editing → Stop editing and display all tasks.   
 The respective attribute is updated for the selected task.
 
 # About Handling invalid user input:
