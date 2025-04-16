@@ -36,13 +36,12 @@
 
 4. Provide the new value for the selected attribute.
 5. Your task will be updated immediately.
+6. Once you exit the "Edit Task" mode, the application will display all tasks for a quick review.
 
 ## 4. Mark Task as Completed:
 1. Select the "Mark Task as Completed" option from the main menu to mark a task as done. (option 4)
 2. Enter the Task ID of the task or the Task Name to update its completion status.
 3. Sort Tasks by Due Date:- The "Due Date" filter automatically arranges tasks chronologically.
-
-- Automatic Task Review After Editing:- Once you exit the "Edit Task" mode, the application will display all tasks for a quick review.
 
 ## 5. Delete a Task
 1. Select the "Delete Task" option from the main menu. (option 5)
