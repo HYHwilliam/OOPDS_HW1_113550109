@@ -68,11 +68,11 @@ The function is designed to:
 
 ## 3. The modifyAttributes function: 
 1. User selects an attribute to edit from the following options:   
-  * 1: Name → Change the task title.   
-  * 2: Category → Update the task classification.
-  * 3: Description → Modify task details.   
-  * 4: Due Date → Set a new deadline (YYYY-MM-DD format).   
-  * 5: Exit Editing → Stop editing and display all tasks.   
+      * 1: Name → Change the task title.   
+      * 2: Category → Update the task classification.
+      * 3: Description → Modify task details.   
+      * 4: Due Date → Set a new deadline (YYYY-MM-DD format).   
+      * 5: Exit Editing → Stop editing and display all tasks.   
 2. The respective attribute is updated for the selected task.
 
 # About Handling invalid user input:
