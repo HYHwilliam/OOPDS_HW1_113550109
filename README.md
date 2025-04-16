@@ -38,7 +38,7 @@
 5. Your task will be updated immediately.
 
 ## 4. Mark Task as Completed:
-1. Select the "MarkTask as completed" option from the main menu to mark a task as done. (option 4)
+1. Select the "Mark Task as Completed" option from the main menu to mark a task as done. (option 4)
 2. Enter the Task ID of the task or the Task Name to update its completion status.
 3. Sort Tasks by Due Date:- The "Due Date" filter automatically arranges tasks chronologically.
 
@@ -53,7 +53,19 @@
 1. Select the "Exit" option from the main menu. (option 6)
 2. Exit!!
 
-## About Handle invalid user input
+## About Handling invalid user input:
+1. Input Validation:
+   - Ensures that user inputs match the expected format (e.g., YYYY-MM-DD for dates).
+   - Restricts menu selection to valid options (e.g., out-of-range number).
+
+2. Will Displays clear error messages when user inputs are invalid, to let user understand what mistake they made.
+
+3. Retry Mechanism:
+   - Retry: Clears the input and lets users re-enter valid data without crashing the program.
+
+
+
+
 
 
 
