@@ -54,16 +54,16 @@
 
 # Some other function in my program 
 ## 1. about showMenu function:
-Will display the menu:
-     1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.
-     2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.
-     3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.
-     4: Mark Task as Completed: Allows users to mark a specific task as completed.
+Will display the menu: 
+     1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date. 
+     2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date. 
+     3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date. 
+     4: Mark Task as Completed: Allows users to mark a specific task as completed. 
      5: Delete Task: Permanently removes a task from the list based on the selected task ID or name.
-     6: Exit: Closes the application and ends the session.
+     6: Exit: Closes the application and ends the session. 
 
 ## 2. The isValidDate function:
-The function is designed to:
+The function is designed to: 
    - Check format: Ensures the input follows the expected YYYY-MM-DD pattern.
    - Extract values: Verifies the year, month, and day as numeric values.
    - Prevent invalid dates: Ensures month and day values are within a valid range. (Month is 1-12, Day is 1-31) 
