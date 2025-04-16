@@ -54,7 +54,7 @@
 
 # Some other function in my program 
 ## 1. about showMenu function:
-Will display the menu
+Will display the menu:
      1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.
      2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.
      3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.
@@ -63,7 +63,7 @@ Will display the menu
      6: Exit: Closes the application and ends the session.
 
 ## 2. The isValidDate function:
-The function is designed to
+The function is designed to:
    - Check format: Ensures the input follows the expected YYYY-MM-DD pattern.
    - Extract values: Verifies the year, month, and day as numeric values.
    - Prevent invalid dates: Ensures month and day values are within a valid range. (Month is 1-12, Day is 1-31) 
@@ -76,7 +76,6 @@ User selects an attribute to edit from the following options:
      - 4: Due Date → Set a new deadline (YYYY-MM-DD format).
      - 5: Exit Editing → Stop editing and display all tasks.
 The respective attribute is updated for the selected task.
-Exit Behavior:- Selecting 5 exits the edit mode and triggers viewTasks(true), displaying all tasks.
 
 # About Handling invalid user input:
 1. Input Validation:
