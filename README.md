@@ -55,7 +55,9 @@
 
 ## 6. Exit the ToDoList:
 1. Select the "Exit" option from the main menu. (option 6)
-2. Exit!!
+2. Exit??
+3. Well, I have some test for you!! If you have the strong determination to exit, I'll let you exist soon.
+4. If not, you can keep using the todolist.
 
 # Some other function in my program 
 ## 1. about showMenu function:
