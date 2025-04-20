@@ -8,7 +8,7 @@
   - Task.h: Define the Task class, which inheritates the Basic_Task.h, and have two new attributes description and due date. Only have display() function, and getters/setters.
   - ToDoList.h: Define the ToDoList class, which manages a collection of tasks using map. All the other function is in here.
 * Preventing users from different systems may not open it successfully -> the no_h_file.cpp
-  - I use Codeblocks to compile the code, but I also provide a no_h_file.cpp to prevent that my project cannot run in others' computer.
+  - I use Codeblocks to compile the code, but I also provide a no_h_file.cpp to prevent that my project can run in others' computer.
 ----------------------
 # How to use
 ## Adding a new task
