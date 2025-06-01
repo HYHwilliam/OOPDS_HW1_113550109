@@ -142,11 +142,11 @@ Displays all books in the library sorted alphabetically:
 
 ```plaintext
 ============================================ Book List ============================================
-No.   Title                          Author              Genre             Year  Copies
+No.   Title                          Author              Genre             Year   Copies
 ----------------------------------------------------------------------------------------------------
-1     Harry Potter                   J.K. Rowling        Magic             2001  2
-2     Les Miserables                 Victor Hugo         Tragedy           1862  1
-3     The Old Man and the Sea       Hemingway           Novel             1952  10
+1     Harry Potter                   J.K. Rowling        Magic             2001   2
+2     Les Miserables                 Victor Hugo         Tragedy           1862   1
+3     The Old Man and the Sea        Hemingway           Novel             1952   10
 ====================================================================================================
 ```
 ## Error Handling
