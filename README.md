@@ -1,180 +1,97 @@
-# OOPDS_Hw2  
-## Library Management System
+# OOPDS_HW1_113550109
+# My ToDO List 
+## About Files  
+* The main file's name is main.cpp. 
+  - This file initializes the application, and handles user inputs to call the corresponding functions for managing tasks.  
+* Supporting Files  
+  - Basic_Task.h: Have three attributes name, category, and completion status. Only have display() function, and getters/setters.
+  - Task.h: Define the Task class, which inheritates the Basic_Task.h, and have two new attributes description and due date. Only have display() function, and getters/setters.
+  - ToDoList.h: Define the ToDoList class, which manages a collection of tasks using map. All the other function is in here.
+* Preventing users from different systems may not open it successfully -> the no_h_file.cpp
+  - I use Codeblocks to compile the code, but I also provide a no_h_file.cpp to prevent that my project can run in others' computer.
+----------------------
+# How to use
+## Adding a new task
+1. Select the "Add Task" option from the main menu. (option 1)  
+2. Enter the required details:  
+   * Name: The title of the task.  
+   * Category: The category or group to which the task belongs.  
+   * Description: A detailed description of the task.  
+   * Due Date: The deadline for the task in the YYYY-MM-DD format.  
+   * Completion Status: You do not need to input, it will set as not completed as default.  
+3. Confirm the task creation, and the task will be added to your list.  
 
-This is a **C++ console-based Library Management System** that allows users to add, search, list, checkout, and return books. It provides basic management functionalities for a small-scale library and is operated via a command-line interface.
+## Viewing tasks
+1. Select the "View Tasks" option from the main menu. (option 2)
+2. Choose from the following filtering options :   
+   * 1: Display All (by ID): View all tasks sorted by their IDs.      
+   * 2: By Name: Enter a name to display tasks that match the input.      
+   * 3: By Completion Status: Filtered by completed or not completed tasks.      
+   * 4: By Category: Enter a category to display tasks that belong to it.      
+   * 5: By Due Date: View all tasks sorted by their due dates.      
+   * 6: Exit: Leave the task view.  
+3. The application will display the tasks according to your selected filtering condition
 
----
+## 3. Edit a Specific Task
+1. Select the "Edit Task" option from the main menu. (option 3)
+2. Enter the Task ID to select the task you wish to modify.
+3. Choose the attribute you want to change:   
+   * 1: Name: Update the task title.   
+   * 2: Category: Update the task category.   
+   * 3: Description: Update the task description.   
+   * 4: Due Date: Change the deadline for the task.   
+   * 5: Exit: Leave edit mode without making further changes.
+4. Provide the new value for the selected attribute.   
+5. Your task will be updated immediately.
+6. Once you exit the "Edit Task" mode, the application will display all tasks for a quick review.
 
-## Features
+## 4. Mark Task as Completed:
+1. Select the "Mark Task as Completed" option from the main menu to mark a task as done. (option 4)
+2. Enter the Task ID of the task or the Task Name to update its completion status.
+3. Sort Tasks by Due Date:- The "Due Date" filter automatically arranges tasks chronologically.
 
-- Add new books with title, author, genre, year, and available copies.
-- Prevent duplicate entries by checking if the book already exists.
-- Search books by **Title**, **Author**, **Genre**, or **Published Year**.
-- Checkout and return books with availability tracking.
-- Case-insensitive searches and sorted output.
-- Friendly, interactive menu interface.
+## 5. Delete a Task
+1. Select the "Delete Task" option from the main menu. (option 5)
+2. Enter the Task ID of the task or the Task Name you want to delete.
+3. The task will be removed from your list.
 
----
+## 6. Exit the ToDoList:
+1. Select the "Exit" option from the main menu. (option 6)
+2. Exit??
+3. Well, I have some test for you!! If you have the strong determination to exit, I'll let you exist soon.
+4. If not, you can keep using the todolist.
 
-## How to Use
+# Some other function in my program 
+## 1. about showMenu function:
+1. Will display the menu:    
+   * 1: Add Task: Allows users to create a new task by entering details such as name, category, description, and due date.     
+   * 2: View Tasks: Displays all tasks with filtering options, including sorting by name, category, completion status, and due date.    
+   * 3: Edit Task: Enables users to modify attributes of an existing task, such as updating its name, category, description, or due date.    
+   * 4: Mark Task as Completed: Allows users to mark a specific task as completed.
+   * 5: Delete Task: Permanently removes a task from the list based on the selected task ID or name.   
+   * 6: Exit: Closes the application and ends the session.    
 
-### 1. Compile and Run the Program
-This project is written in C++ and requires a C++ compiler that supports C++11 or later. A commonly used compiler is **g++**, which is part of the GNU Compiler Collection (GCC).
+## 2. The isValidDate function:
+The function is designed to: 
+   - Check format: Ensures the input follows the expected YYYY-MM-DD pattern.
+   - Extract values: Verifies the year, month, and day as numeric values.
+   - Prevent invalid dates: Ensures month and day values are within a valid range. (Month is 1-12, Day is 1-31) 
 
-To compile the source files (`main.cpp`, `Library.cpp`, and `Book.cpp`), open your terminal or command prompt and run the following command:
-```bash
-g++ main.cpp Library.cpp Book.cpp -o library
-./library
-```
-### 2. Library Menu
-Once the program starts, users can interact with the following menu:
-```plaintext
-Library Menu:
-1. Add Book
-2. Search Book
-3. Checkout Book
-4. Return Book
-5. List All Books
-6. Exit
-Enter your choice (1-6):
-```
-Users should enter a valid numeric option (1-6) to proceed.
+## 3. The modifyAttributes function: 
+1. User selects an attribute to edit from the following options:   
+      * 1: Name → Change the task title.   
+      * 2: Category → Update the task classification.
+      * 3: Description → Modify task details.   
+      * 4: Due Date → Set a new deadline (YYYY-MM-DD format).   
+      * 5: Exit Editing → Stop editing and display all tasks.   
+2. The respective attribute is updated for the selected task.
 
-## Input Formats
-### 1. Add a Book
-Users will be prompted to enter book details:
+# About Handling invalid user input:
+1. Input Validation:
+   - Ensures that user inputs match the expected format (e.g., YYYY-MM-DD for dates).
+   - Restricts menu selection to valid options (e.g., out-of-range number).
 
-```plaintext
-Title: <book title>
-Author: <author name>
-Genre: <genre>
-Published Year: <4-digit year, e.g., 2023>
-Available Copies: <positive integer>
-```
-If a book with the same title, author, genre, and year exists, the system will ask:
+2. Will Displays clear error messages when user inputs are invalid, to let user understand what mistake they made.
 
-```plaintext
-Would you like to update the number of available copies? (Y/N):
-```
-### 2. Search a Book
-Users can search books by **title**, **author**, **genre**, or **year** using the Search Book option. The search supports **partial and case-insensitive matches** — you don't need to type the exact full name to find results.  
-
-When selecting Search Book, users interact with this menu:
-```plaintext
-Search Book by:
-1. Book Title
-2. Author
-3. Genre
-4. Year
-5. Finish and Exit
-Enter your choice (1-5): 
-```
-Users enter a number (1-5) to choose how they want to search. After finishing, the system returns to the main menu.
-
-Example of search by title:
-```plaintext
-Enter the title: Potter
-Exact matches:
---------------------------------------------------
-Title  : Harry Potter
-Author : J.K. Rowling
-Genre  : Magic
-Year   : 2001
-Copies : 2
---------------------------------------------------
-Similar title found:
---------------------------------------------------
-Title  : The Potter's Craft
-Author : Charles Freeman
-Genre  : Art
-Year   : 1920
-Copies : 1
---------------------------------------------------
-```
-
-### 3. Checkout a Book
-Users can borrow a book by entering its title.
-
-```plaintext
-Enter book title to checkout: Harry Potter
-Book checked out successfully.
-Now Available: 1
-```
-If no copies are available:
-```plaintext
-Book is not available now.
-```
-### 4. Return a Book
-Users can return a borrowed book by entering its title.
-```plaintext
-Enter book title to return: Harry Potter
-Book returned successfully.
-Now Available: 2
-```
-If the book was never checked out:
-```plaintext
-This book is not lended, so it's impossible to return.
-```
-### 5. List All Books
-Displays all books in the library sorted alphabetically:
-
-```plaintext
-============================================ Book List ============================================
-No.   Title                          Author              Genre             Year   Copies
-----------------------------------------------------------------------------------------------------
-1     Harry Potter                   J.K. Rowling        Magic             2001   2
-2     Les Miserables                 Victor Hugo         Tragedy           1862   1
-3     The Old Man and the Sea        Hemingway           Novel             1952   10
-====================================================================================================
-```
-## Error Handling
-
-### 1. Input Length and Format Validation
-User inputs must follow the correct format, such as a 4-digit year.
-```plaintext
-Enter published year: 23
-Invalid input. Please enter a 4-digit year (e.g., 2023).
-```
-### 2. Case-Insensitive Searching
-Search ignores uppercase/lowercase differences for convenience.
-```plaintext
-Enter the title: HARRY POTTER
-Exact matches:
---------------------------------------------------
-Title  : Harry Potter
-Author : J.K. Rowling
-Genre  : Magic
-Year   : 2001
-Copies : 2
---------------------------------------------------
-```
-
-### 3. Handling Unavailable Books During Checkout
-Prevent borrowing when no copies are available.
-```plaintext
-Enter book title to checkout: The Great Gatsby
-Book is not available now.
-```
-### 4. Duplicate Book Detection and Updating Copies
-If the same book already exists, the system will ask if you want to update the number of available copies instead of adding a duplicate.
-```plaintext
-This book already exists.
-Would you like to update the number of available copies? (Y/N):
-```
-
-## Project Structure
-```plaintxt
-.
-├── Book.h        # Book class declaration
-├── Book.cpp      # Book class implementation
-├── Library.h     # Library class declaration
-├── Library.cpp   # Library class implementation
-├── main.cpp      # Entry point with menu loop
-```
-## Requirements
-C++11 or newer
-
-Standard C++ libraries: iostream, string, vector, iomanip, etc.
-
-No external dependencies
-
+3. Retry Mechanism:
+   - Retry: Clears the input and lets users re-enter valid data without crashing the program.
