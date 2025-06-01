@@ -19,6 +19,9 @@ This is a **C++ console-based Library Management System** that allows users to a
 ## How to Use
 
 ### 1. Compile and Run the Program
+This project is written in C++ and requires a C++ compiler that supports C++11 or later. A commonly used compiler is **g++**, which is part of the GNU Compiler Collection (GCC).
+
+To compile the source files (`main.cpp`, `Library.cpp`, and `Book.cpp`), open your terminal or command prompt and run the following command:
 ```bash
 g++ main.cpp Library.cpp Book.cpp -o library
 ./library
@@ -54,7 +57,7 @@ If a book with the same title, author, genre, and year exists, the system will a
 Would you like to update the number of available copies? (Y/N):
 ```
 ### 2. Search a Book
-Users can search books by title, author, genre, or year using the Search Book option.
+Users can search books by **title**, **author**, **genre**, or **year** using the Search Book option. The search supports **partial and case-insensitive matches** — you don't need to type the exact full name to find results.
 Example of search by title:
 ```plaintext
 Enter the title: Potter
