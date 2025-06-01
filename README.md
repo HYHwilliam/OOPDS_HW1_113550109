@@ -20,7 +20,7 @@ This is a **C++ console-based Library Management System** that allows users to a
 
 ### 1. Compile and Run the Program
 
-```bash
+```plaintext
 g++ main.cpp Library.cpp Book.cpp -o library
 ./library
 2. Library Menu
