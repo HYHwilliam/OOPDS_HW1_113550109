@@ -150,13 +150,39 @@ No.   Title                          Author              Genre             Year 
 ====================================================================================================
 ```
 ## Error Handling
-Input length and format validation (e.g., 4-digit year).
 
-Case-insensitive searching.
+### 1. Input Length and Format Validation
+User inputs must follow the correct format, such as a 4-digit year.
+```plaintext
+Enter published year: 23
+Invalid input. Please enter a 4-digit year (e.g., 2023).
+```
+### 2. Case-Insensitive Searching
+Searches ignore letter case to improve usability.
+```plaintext
+Enter the title: HARRY POTTER
+Exact matches:
+--------------------------------------------------
+Title  : Harry Potter
+Author : J.K. Rowling
+Genre  : Magic
+Year   : 2001
+Copies : 2
+--------------------------------------------------
+```
 
-Handling unavailable books during checkout.
-
-Duplicate book detection and updating copies instead of adding duplicates.
+### 3. Handling Unavailable Books During Checkout
+Books with zero available copies cannot be checked out.
+```plaintext
+Enter book title to checkout: The Great Land
+Book is not available now.
+```
+### 4. Duplicate Book Detection and Updating Copies
+If the same book already exists, the system will ask if you want to update the number of available copies instead of adding a duplicate.
+```plaintext
+This book already exists.
+Would you like to update the number of available copies? (Y/N):
+```
 
 ## Project Structure
 ```plaintxt
