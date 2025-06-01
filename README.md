@@ -57,7 +57,8 @@ If a book with the same title, author, genre, and year exists, the system will a
 Would you like to update the number of available copies? (Y/N):
 ```
 ### 2. Search a Book
-Users can search books by **title**, **author**, **genre**, or **year** using the Search Book option. The search supports **partial and case-insensitive matches** — you don't need to type the exact full name to find results.
+Users can search books by **title**, **author**, **genre**, or **year** using the Search Book option. The search supports **partial and case-insensitive matches** — you don't need to type the exact full name to find results.  
+
 Example of search by title:
 ```plaintext
 Enter the title: Potter
