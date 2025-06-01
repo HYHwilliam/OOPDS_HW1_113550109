@@ -177,7 +177,7 @@ Copies : 2
 ### 3. Handling Unavailable Books During Checkout
 Books with zero available copies cannot be checked out.
 ```plaintext
-Enter book title to checkout: The Great Land
+Enter book title to checkout: The Great Gatsby
 Book is not available now.
 ```
 ### 4. Duplicate Book Detection and Updating Copies
