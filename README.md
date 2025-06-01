@@ -36,26 +36,27 @@ Library Menu:
 Enter your choice (1-6):
 ```
 Users should enter a valid numeric option (1-6) to proceed.
-📥 Input Formats
-1. Add a Book
+
+## Input Formats
+### 1. Add a Book
 Users will be prompted to enter book details:
 
-plaintext
+```plaintext
 Title: <book title>
 Author: <author name>
 Genre: <genre>
 Published Year: <4-digit year, e.g., 2023>
 Available Copies: <positive integer>
+```
 If a book with the same title, author, genre, and year exists, the system will ask:
 
-plaintext
+```plaintext
 Would you like to update the number of available copies? (Y/N):
-2. Search a Book
+```
+### 2. Search a Book
 Users can search books by title, author, genre, or year using the Search Book option.
-
 Example of search by title:
-
-plaintext
+```plaintext
 Enter the title: Potter
 Exact matches:
 --------------------------------------------------
@@ -73,9 +74,9 @@ Genre  : Art
 Year   : 1920
 Copies : 1
 --------------------------------------------------
+```
 Search by author:
-
-plaintext
+```plaintext
 Enter the author of the book: Hemingway
 Exact matches:
 --------------------------------------------------
@@ -85,9 +86,10 @@ Genre  : Fiction
 Year   : 1952
 Copies : 10
 --------------------------------------------------
+```
 Search by genre:
 
-plaintext
+```plaintext
 Enter the genre: Fiction
 Exact matches:
 --------------------------------------------------
@@ -97,9 +99,10 @@ Genre  : Fiction
 Year   : 1925
 Copies : 3
 --------------------------------------------------
+```
 Search by year:
 
-plaintext
+```plaintext
 Enter published year: 1862
 Exact matches:
 --------------------------------------------------
@@ -109,32 +112,35 @@ Genre  : Tragedy
 Year   : 1862
 Copies : 2
 --------------------------------------------------
-3. Checkout a Book
+```
+
+### 3. Checkout a Book
 Users can borrow a book by entering its title.
 
-plaintext
+```plaintext
 Enter book title to checkout: Harry Potter
 Book checked out successfully.
 Now Available: 1
+```
 If no copies are available:
-
-plaintext
+```plaintext
 Book is not available now.
-4. Return a Book
+```
+### 4. Return a Book
 Users can return a borrowed book by entering its title.
-
-plaintext
+```plaintext
 Enter book title to return: Harry Potter
 Book returned successfully.
 Now Available: 2
+```
 If the book was never checked out:
-
-plaintext
+```plaintext
 This book is not lended, so it's impossible to return.
-5. List All Books
+```
+### 5. List All Books
 Displays all books in the library sorted alphabetically:
 
-plaintext
+```plaintext
 ============================================ Book List ============================================
 No.   Title                          Author              Genre             Year  Copies
 ----------------------------------------------------------------------------------------------------
@@ -142,7 +148,8 @@ No.   Title                          Author              Genre             Year 
 2     Les Miserables                 Victor Hugo         Tragedy           1862  1
 3     The Old Man and the Sea       Hemingway           Novel             1952  10
 ====================================================================================================
-⚠️ Error Handling
+```
+## ⚠️ Error Handling
 Input length and format validation (e.g., 4-digit year).
 
 Case-insensitive searching.
@@ -151,17 +158,16 @@ Handling unavailable books during checkout.
 
 Duplicate book detection and updating copies instead of adding duplicates.
 
-📂 Project Structure
-kotlin
-複製
-編輯
+## 📂 Project Structure
+```plaintxt
 .
 ├── Book.h        # Book class declaration
 ├── Book.cpp      # Book class implementation
 ├── Library.h     # Library class declaration
 ├── Library.cpp   # Library class implementation
 ├── main.cpp      # Entry point with menu loop
-📌 Requirements
+```
+## 📌 Requirements
 C++11 or newer
 
 Standard C++ libraries: iostream, string, vector, iomanip, etc.
