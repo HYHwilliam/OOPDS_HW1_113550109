@@ -59,6 +59,18 @@ Would you like to update the number of available copies? (Y/N):
 ### 2. Search a Book
 Users can search books by **title**, **author**, **genre**, or **year** using the Search Book option. The search supports **partial and case-insensitive matches** — you don't need to type the exact full name to find results.  
 
+When selecting Search Book, users interact with this menu:
+```plaintext
+Search Book by:
+1. Book Title
+2. Author
+3. Genre
+4. Year
+5. Finish and Exit
+Enter your choice (1-5): 
+```
+Users enter a number (1-5) to choose how they want to search. After finishing, the system returns to the main menu.
+
 Example of search by title:
 ```plaintext
 Enter the title: Potter
@@ -77,44 +89,6 @@ Author : Charles Freeman
 Genre  : Art
 Year   : 1920
 Copies : 1
---------------------------------------------------
-```
-Search by author:
-```plaintext
-Enter the author of the book: Hemingway
-Exact matches:
---------------------------------------------------
-Title  : The Old Man and the Sea
-Author : Hemingway
-Genre  : Fiction
-Year   : 1952
-Copies : 10
---------------------------------------------------
-```
-Search by genre:
-
-```plaintext
-Enter the genre: Fiction
-Exact matches:
---------------------------------------------------
-Title  : The Great Gatsby
-Author : F. Scott Fitzgerald
-Genre  : Fiction
-Year   : 1925
-Copies : 3
---------------------------------------------------
-```
-Search by year:
-
-```plaintext
-Enter published year: 1862
-Exact matches:
---------------------------------------------------
-Title  : Les Miserables
-Author : Victor Hugo
-Genre  : Tragedy
-Year   : 1862
-Copies : 2
 --------------------------------------------------
 ```
 
@@ -162,7 +136,7 @@ Enter published year: 23
 Invalid input. Please enter a 4-digit year (e.g., 2023).
 ```
 ### 2. Case-Insensitive Searching
-Searches ignore letter case to improve usability.
+Search ignores uppercase/lowercase differences for convenience.
 ```plaintext
 Enter the title: HARRY POTTER
 Exact matches:
@@ -176,7 +150,7 @@ Copies : 2
 ```
 
 ### 3. Handling Unavailable Books During Checkout
-Books with zero available copies cannot be checked out.
+Prevent borrowing when no copies are available.
 ```plaintext
 Enter book title to checkout: The Great Gatsby
 Book is not available now.
