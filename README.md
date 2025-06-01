@@ -19,13 +19,13 @@ This is a **C++ console-based Library Management System** that allows users to a
 ## 🛠 How to Use
 
 ### 1. Compile and Run the Program
-
+```bash
 g++ main.cpp Library.cpp Book.cpp -o library
 ./library
-2. Library Menu
+```
+### 2. Library Menu
 Once the program starts, users can interact with the following menu:
-
-plaintext
+```plaintext
 Library Menu:
 1. Add Book
 2. Search Book
@@ -34,6 +34,7 @@ Library Menu:
 5. List All Books
 6. Exit
 Enter your choice (1-6):
+```
 Users should enter a valid numeric option (1-6) to proceed.
 📥 Input Formats
 1. Add a Book
