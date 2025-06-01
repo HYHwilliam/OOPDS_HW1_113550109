@@ -1,11 +1,11 @@
 # OOPDS_Hw2  
-# 📚 Library Management System
+## Library Management System
 
 This is a **C++ console-based Library Management System** that allows users to add, search, list, checkout, and return books. It provides basic management functionalities for a small-scale library and is operated via a command-line interface.
 
 ---
 
-## ✅ Features
+## Features
 
 - Add new books with title, author, genre, year, and available copies.
 - Prevent duplicate entries by checking if the book already exists.
@@ -16,7 +16,7 @@ This is a **C++ console-based Library Management System** that allows users to a
 
 ---
 
-## 🛠 How to Use
+## How to Use
 
 ### 1. Compile and Run the Program
 ```bash
@@ -149,7 +149,7 @@ No.   Title                          Author              Genre             Year 
 3     The Old Man and the Sea       Hemingway           Novel             1952  10
 ====================================================================================================
 ```
-## ⚠️ Error Handling
+## Error Handling
 Input length and format validation (e.g., 4-digit year).
 
 Case-insensitive searching.
@@ -158,7 +158,7 @@ Handling unavailable books during checkout.
 
 Duplicate book detection and updating copies instead of adding duplicates.
 
-## 📂 Project Structure
+## Project Structure
 ```plaintxt
 .
 ├── Book.h        # Book class declaration
@@ -167,7 +167,7 @@ Duplicate book detection and updating copies instead of adding duplicates.
 ├── Library.cpp   # Library class implementation
 ├── main.cpp      # Entry point with menu loop
 ```
-## 📌 Requirements
+## Requirements
 C++11 or newer
 
 Standard C++ libraries: iostream, string, vector, iomanip, etc.
